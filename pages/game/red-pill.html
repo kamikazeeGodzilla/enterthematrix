@@ -1,0 +1,39 @@
+<div class="content-section">
+    <h2 class="text-3xl font-bold text-gray-800 mb-6">Join the Resistance</h2>
+    
+    <div class="bg-blue-50 p-6 rounded-lg mb-8">
+        <h3 class="text-xl font-semibold text-gray-800 mb-4">The Matrix Simulation</h3>
+        <p class="text-gray-600 mb-4">
+            The game is still in development. Join our waiting list to be notified when the Matrix simulation goes live.
+        </p>
+        
+        <form id="waiting-list-form" class="space-y-4">
+            <div class="form-group">
+                <label for="waiting-list-email" class="form-label">
+                    Your Email Address
+                </label>
+                <input 
+                    type="email" 
+                    id="waiting-list-email" 
+                    name="email" 
+                    required 
+                    class="form-input"
+                    placeholder="neo@matrix.com"
+                >
+            </div>
+            <button type="submit" class="btn btn-primary">
+                Join the Waiting List
+            </button>
+        </form>
+        
+        <div id="waiting-list-success" class="alert alert-success hidden">
+            <p class="font-medium">Welcome to the resistance! You've been added to our waiting list.</p>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <button class="btn btn-secondary" onclick="navigateBack()">
+            ← Go Back to Reality
+        </button>
+    </div>
+</div> 
